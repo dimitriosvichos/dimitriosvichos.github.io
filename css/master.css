@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Gantari&display=swap');
+
+* { font-family: 'Gantari', sans-serif; }
+
+body {
+    background-image: url("../blob-scene-haikei.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.custom-orange-text { color: #FBAE3C; }
+
+.main-banner { position: relative; }
+
+.main-banner:before {
+    content: "";
+    position: absolute;
+    width: 657px;
+    height: 657px;
+    border: 4px dashed white;
+    border-radius: 50%;
+    animation: borderRotation 100s infinite;
+}
+
+.custom-button, 
+a > em { transition: 200ms ease-in-out; }
+
+.custom-button:hover { 
+    color: white;
+    border-color: white;
+    background-color: transparent; 
+}
+
+a > em:hover{ color: white; }
+
+@keyframes borderRotation {
+    100% { 
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

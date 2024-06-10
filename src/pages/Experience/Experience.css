@@ -1,0 +1,42 @@
+/* Experience.css */
+
+.layout {
+    display: flex;
+    height: 100%;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 20px;
+    width: 50%;
+}
+
+.side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.eimai {
+    opacity: 0;
+    transform: perspective(1200px) translateY(50px) scale(.6) rotateX(-25deg) rotateY(20deg);
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 20px;
+}
+
+.card {
+    padding: 15px 32px;
+    border-radius: 40px;
+    flex: 1;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 28px;
+    object-fit: cover;
+}

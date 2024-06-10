@@ -1,0 +1,64 @@
+.navbar {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+  margin: 0 auto;
+  padding: 0 20px;
+  border-radius: 20px;
+  background: rgba(15, 16, 16, 0.4);
+  border: 2px solid rgba(0, 0, 0, 0);
+  z-index: 10;
+}
+
+.navbar-left {
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+}
+
+.navbar-left > span {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 25px;
+  font-family: "Inter", sans-serif;
+  cursor: default;
+  letter-spacing: 5px;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 25px;
+
+}
+
+.icon {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon-container:hover,
+.icon-container:hover .icon {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-right:last-child {
+  margin-right: 25px;
+}

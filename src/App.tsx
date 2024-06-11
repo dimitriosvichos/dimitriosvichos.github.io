@@ -6,9 +6,7 @@ import './App.css'
 function App() {
   return (
     <>
-      <Navbar />
-      <Hero />
-      <Experience />
+      <div>kati den paizei kai psaxnw</div>
     </>
   )
 }

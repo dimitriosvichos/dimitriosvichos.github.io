@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { SetStateAction, useEffect, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ReactComponent as Firebase } from "../../assets/firebase.svg";
@@ -29,12 +29,12 @@ const HoverableIcons = () => {
 
   const [saveTitle, setSaveTitle] = useState("React");
 
-  const handleMouseEnter = (color, title) => {
+  const handleMouseEnter = (color: string | null, title: SetStateAction<string>) => {
     setSaveTitle(title);
     document.documentElement.style.setProperty('--hover-shadow-color', color);
   };
 
-  const handleMouseLeave = (title) => {
+  const handleMouseLeave = (title: SetStateAction<string>) => {
     setSaveTitle(title);
     document.documentElement.style.removeProperty('--hover-shadow-color');
   };
@@ -112,9 +112,9 @@ const HoverableIcons = () => {
           >
             <div 
               className={`each-icon w-[70px] h-[70px] flex justify-center items-center rounded-lg`}
-              style={{ '--hover-background-color': item.color, transition: "all .4s ease-in-out"}}
+              style={{'--hover-background-color': item.color, transition: "all .4s ease-in-out"} as React.CSSProperties}
               onMouseEnter={() => handleMouseEnter(item.color, item.title)}
-              onMouseLeave={() => handleMouseLeave(item.title, item.color)}
+              onMouseLeave={() => handleMouseLeave(item.title)}
             >
               {item.icon}
             </div>

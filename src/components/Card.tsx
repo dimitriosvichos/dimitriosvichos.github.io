@@ -20,7 +20,6 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({ image, companyTi
           start: "top 90%",
           end: "bottom 60%",
           scrub: 1,
-        //   markers: true,
         },
         opacity: 1,
         transform: "perspective(200px) translate3d(0px, 0px, 0px) rotate(0deg) rotateY(0deg) rotateX(0deg)",

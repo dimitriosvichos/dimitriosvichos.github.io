@@ -58,7 +58,7 @@ const HoverableIcons = () => {
     gsap.to(".header-text", {
       scrollTrigger: {
         trigger: ".header-text",
-        start: "200px center",
+        start: "290px center",
         // markers: true,
         scrub: 1,
       },
@@ -70,7 +70,7 @@ const HoverableIcons = () => {
     gsap.to(".header-span", {
       scrollTrigger: {
         trigger: ".header-span",
-        start: "180px center",
+        start: "230px center",
         // markers: true,
         scrub: 1,
       },

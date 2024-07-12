@@ -9,10 +9,12 @@
     "deployment": "gh-pages -d dist",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
+    
   },
   "dependencies": {
     "@gsap/react": "^2.1.1",
     "@tailwindcss/typography": "^0.5.13",
+    "gh-pages": "^6.1.1",
     "gsap": "^3.12.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

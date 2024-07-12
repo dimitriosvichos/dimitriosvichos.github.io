@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import { FaLinkedinIn } from "react-icons/fa";
-import { AiOutlineMail } from "react-icons/ai";
 import { FaCodepen } from "react-icons/fa6";
 import { LuGithub } from "react-icons/lu";
 import './Contact.css'
@@ -45,8 +44,9 @@ const Contact: React.FC = () => {
         icons.forEach((icon, index) => {
             const flyingIcon = flyingIcons[index];
             if (flyingIcon) {
-                icon.style.setProperty('--direction', `${flyingIcon.direction}deg`);
-                icon.style.setProperty('--rotation', `${flyingIcon.rotation}deg`);
+                const iconElement = icon as HTMLElement;
+                iconElement.style.setProperty('--direction', `${flyingIcon.direction}deg`);
+                iconElement.style.setProperty('--rotation', `${flyingIcon.rotation}deg`);
             }
         });
     }, [flyingIcons]);

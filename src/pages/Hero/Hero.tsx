@@ -97,7 +97,7 @@ const HoverableIcons = () => {
       <div className="text-container w-full lg:w-1/2 text-white px-[30px] lg:px-0">
         <div className="text-[36px] font-bold mb-2 flex header-text"><span>Hello, I'm Dimitris </span> <span className="w-5 m-0 p-0">✌️</span></div>
         <p className="text-[36px] font-bold header-span">
-          Frontend Developer creating web apps 
+          Frontend Developer creating web apps
           <strong> with {saveTitle}.</strong>
         </p>
       </div>

@@ -1,6 +1,8 @@
 import Navbar from './pages/Navbar/Navbar'
 import Hero from './pages/Hero/Hero'
 import Experience from './pages/Experience/Experience'
+// import Projects from './pages/Projects/Projects'
+import Contact from './pages/Contact/Contact'
 import './App.css'
 
 function App() {
@@ -9,6 +11,8 @@ function App() {
       <Navbar />
       <Hero />
       <Experience />
+      {/* <Projects /> */}
+      <Contact />
     </>
   )
 }

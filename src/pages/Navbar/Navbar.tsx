@@ -23,7 +23,7 @@ const Navbar = () => {
 
     }, []);
     return (
-        <div className="navbar w-full lg:max-w-[960px] top-0">
+        <div className="navbar w-3/4 lg:max-w-[1060px] top-[30px]">
             <div className="navbar-left">
                 <span>DIMITRIS VICHOS</span>
             </div>

@@ -1,6 +1,5 @@
 .navbar {
   position: fixed;
-  top: 50px;
   left: 0;
   right: 0;
   display: flex;
@@ -8,7 +7,6 @@
   align-items: center;
   height: 72px;
   margin: 0 auto;
-  padding: 0 20px;
   border-radius: 20px;
   background: rgba(15, 16, 16, 0.4);
   border: 2px solid rgba(0, 0, 0, 0);
@@ -22,7 +20,7 @@
 }
 
 .navbar-left > span {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.642);
   font-size: 14px;
   font-weight: bold;
   margin-left: 25px;
@@ -31,15 +29,11 @@
   letter-spacing: 5px;
 }
 
-.navbar-right {
-  display: flex;
-  gap: 25px;
-
-}
+.navbar-right { display: flex; }
 
 .icon {
   font-size: 20px;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.642);
   transition: all 0.3s ease-in-out;
 }
 

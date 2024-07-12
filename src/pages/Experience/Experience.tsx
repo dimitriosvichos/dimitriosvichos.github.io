@@ -23,8 +23,13 @@ const Experience: React.FC = () => {
 
 
   return (
-    <div className="h-[100vh] flex items-center" style={{ backgroundColor: "rgba(14, 16, 17, 1)" }}>
-      <div className="layout mx-auto">
+    <div className="h-[100vh] flex items-center flex-col lg:flex-row justify-center" style={{ backgroundColor: "rgba(14, 16, 17, 1)" }}>
+
+      <div className="title lg:hidden mt-[40px] md:mb-[60px]">
+        <h1 className="text-[25px] md:text-[40px] text-white font-semibold">MY WORK EXPERIENCE</h1>
+      </div>
+
+      <div className="layout mx-auto lg:h-[70%] flex-col lg:flex-row">
         <div className="side">
           <ExperienceCard jobTitle="FRONTEND ENGINEER" companyTitle="LIKNOSS" startDate="now" />
         </div>

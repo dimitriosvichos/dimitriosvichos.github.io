@@ -93,7 +93,56 @@ const HoverableIcons = () => {
   }, []);
 
   return (
-    <div className="hero container mx-auto flex flex-col lg:flex-row items-center justify-center lg:justify-between lg:w-[960px] h-[100vh] py-10">
+    <div 
+      className="hero-wrapper w-full h-[100vh] flex items-center justify-center relative overflow-hidden"
+      style={{
+        background: 'linear-gradient(180deg, rgb(102, 102, 102) 0%, rgb(46, 46, 46) 60%, rgba(14, 16, 17, 1) 100%)'
+      }}
+    >
+      <div className="abstract-bg absolute inset-0 pointer-events-none">
+        <div className="particle-dot dot-1"></div>
+        <div className="particle-dot dot-2"></div>
+        <div className="particle-dot dot-3"></div>
+        <div className="particle-dot dot-4"></div>
+        <div className="particle-dot dot-5"></div>
+        <div className="particle-dot dot-6"></div>
+        <div className="particle-dot dot-7"></div>
+        <div className="particle-dot dot-8"></div>
+        <div className="particle-dot dot-9"></div>
+        <div className="particle-dot dot-10"></div>
+        <div className="particle-dot dot-11"></div>
+        <div className="particle-dot dot-12"></div>
+        <div className="particle-dot dot-13"></div>
+        <div className="particle-dot dot-14"></div>
+        <div className="particle-dot dot-15"></div>
+        <div className="particle-dot dot-16"></div>
+        <div className="particle-dot dot-17"></div>
+        <div className="particle-dot dot-18"></div>
+        <div className="particle-dot dot-19"></div>
+        <div className="particle-dot dot-20"></div>
+        <div className="particle-dot dot-21"></div>
+        <div className="particle-dot dot-22"></div>
+        <div className="particle-dot dot-23"></div>
+        <div className="particle-dot dot-24"></div>
+        <div className="particle-dot dot-25"></div>
+        <div className="particle-dot dot-26"></div>
+        <div className="particle-dot dot-27"></div>
+        <div className="particle-dot dot-28"></div>
+        <div className="particle-dot dot-29"></div>
+        <div className="particle-dot dot-30"></div>
+        <div className="particle-dot dot-31"></div>
+        <div className="particle-dot dot-32"></div>
+        <div className="particle-dot dot-33"></div>
+        <div className="particle-dot dot-34"></div>
+        <div className="particle-dot dot-35"></div>
+        <div className="particle-dot dot-36"></div>
+        <div className="particle-dot dot-37"></div>
+        <div className="particle-dot dot-38"></div>
+        <div className="particle-dot dot-39"></div>
+        <div className="particle-dot dot-40"></div>
+      </div>
+      
+      <div className="hero container mx-auto flex flex-col lg:flex-row items-center justify-center lg:justify-between lg:w-[960px] py-10 relative z-10">
       <div className="text-container w-full lg:w-1/2 text-white px-[30px] lg:px-0">
         <div className="text-[36px] font-bold mb-2 flex header-text"><span>Hello, I'm Dimitris </span> <span className="w-5 m-0 p-0">✌️</span></div>
         <p className="text-[36px] font-bold header-span">
@@ -120,10 +169,7 @@ const HoverableIcons = () => {
             </div>
           </div>
         ))}
-
-        <div className="w-full flex items-center p-2 ml-2 text-white">
-          <p>And some more.....</p>
-        </div>
+      </div>
       </div>
     </div>
   );

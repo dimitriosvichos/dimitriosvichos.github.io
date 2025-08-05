@@ -8,9 +8,10 @@ interface ExperienceCardProps {
     companyTitle?: string;
     jobTitle?: string;
     startDate?: string;
+    endDate?: string;
 }
 
-export const ExperienceCard: React.FC<ExperienceCardProps> = ({ image, companyTitle, jobTitle, startDate }) => {
+export const ExperienceCard: React.FC<ExperienceCardProps> = ({ image, companyTitle, jobTitle, startDate, endDate }) => {
     gsap.registerPlugin(ScrollTrigger);
 
     React.useEffect(() => {
@@ -36,9 +37,9 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({ image, companyTi
             <div className="flex flex-col justify-between h-2/5 mt-4">
                 <h3 className="text-lg text-white font-semibold">{companyTitle}</h3>
 
-                <div className="flex items-end" style={{ gap: "20px" }}>
+                <div className="flex" style={{ gap: "20px" }}>
                     <h2 className="text-gray-500 font-bold tracking-wider">{jobTitle}</h2>
-                    <p className="text-gray-500 font-bold w-[60px]">{"/ " + startDate}</p>
+                    <span className="text-gray-500 font-bold">{endDate + " / " + startDate}</span>
                 </div>
             </div>
         </div>

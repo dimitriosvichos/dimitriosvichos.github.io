@@ -25,13 +25,13 @@ const Experience: React.FC = () => {
   return (
     <div className="h-[100vh] flex items-center flex-col lg:flex-row justify-center" style={{ backgroundColor: "rgba(14, 16, 17, 1)" }}>
 
-      <div className="title lg:hidden mt-[40px] md:mb-[60px]">
+      <div className="title lg:hidden mt-[40px] md:mb-[60px] relative z-10">
         <h1 className="text-[25px] md:text-[40px] text-white font-semibold">MY WORK EXPERIENCE</h1>
       </div>
 
-      <div className="layout mx-auto lg:h-[70%] flex-col lg:flex-row">
-        <div className="side">
-          <ExperienceCard jobTitle="FRONTEND ENGINEER" companyTitle="LIKNOSS" startDate="now" />
+      <div className="layout mx-auto lg:h-[85%] flex-col lg:flex-row relative z-10">
+        <div className="side" style={{ justifyContent: "center" }}>
+          <ExperienceCard jobTitle="FRONTEND ENGINEER" companyTitle="LIKNOSS" startDate="Nov 2022" endDate="May 2025" />
         </div>
 
         <div className="middle hidden lg:flex">
@@ -63,8 +63,8 @@ const Experience: React.FC = () => {
         </div>
 
         <div className="side">
-          <div className="card hidden lg:flex"></div>
-          <ExperienceCard jobTitle="FRONTEND ENGINEER INTERN" companyTitle="GENERATION-Y" startDate="2022" />
+          <ExperienceCard jobTitle="SENIOR FRONTEND ENGINEER" companyTitle="SILENO AG" startDate="May 2025" endDate="now" />
+          <ExperienceCard jobTitle="FRONTEND ENGINEER INTERN" companyTitle="GENERATION-Y" startDate="Jan 2022" endDate="Jul 2022" />
         </div>
       </div>
     </div>
